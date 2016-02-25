@@ -1,15 +1,66 @@
 <!doctype html>
 <html ng-app="svendeprove">
-    <head>
-        <link type="text/css" rel="stylesheet" href="less/svendeprove.css">
-    </head>
-    <body>
-       
-        <front-area></front-area>
-       
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.js"></script>
-        <script src="js/app.js"></script>
-        <script src="js/controllers.js"></script>
-    </body>
+	<head>
+
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+		<link type="text/css" rel="stylesheet" href="less/svendeprove.css">
+	</head>
+	<body>
+
+		<div id="header">
+			<button type="button" id="nav-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<a href="/" class="name"><span>Svendeportfolio</span> af Bjørn Nyborg</a>
+		</div>
+
+		<nav id="menu">
+			<div class="vcenter-wrap">
+				<div class="vcenter">
+					<a href="#">Grafisk design</a>
+					<a href="#">Typografi</a>
+					<a href="#">Grafik og billedbehandling</a>
+					<a href="#">Grafisk produktionsforståelse</a>
+				</div>
+			</div>
+			<footer>
+				<a href="mailto:me@bjornnyborg.com">me@bjornnyborg.com</a>
+				<a href="tel:+4553729081">53 72 90 81</a>
+				<a href="http://bjornnyborg.com">bjornnyborg.com</a>
+			</footer>
+		</nav>
+
+		<a href="" class="subject">
+			<h2>Grafisk design</h2>
+			<div class="background">
+				<img src="http://lorempixel.com/1920/600/nature/1" alt="">
+			</div>
+		</a>
+		<a href="" class="subject">
+			<h2>Typografi</h2>
+			<div class="background">
+				<img src="http://lorempixel.com/1920/600/nature/2" alt="">
+			</div>
+		</a>
+		<a href="" class="subject">
+			<h2>Grafik og billedbehandling</h2>
+			<div class="background">
+				<img src="http://lorempixel.com/1920/600/nature/3" alt="">
+			</div>
+		</a>
+		<a href="" class="subject">
+			<h2>Grafisk produktionsforståelse</h2>
+			<div class="background">
+				<img src="http://lorempixel.com/1920/600/nature/4" alt="">
+			</div>
+		</a>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/svendeproeve.js"></script>
+
+
+	</body>
 </html>
