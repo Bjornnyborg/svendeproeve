@@ -3793,7 +3793,7 @@ a:hover {
   top: 50px;
   display: block;
   opacity: .5;
-  font-size: 4vw;
+  font-size: 20px;
   margin: 30px 0;
   -webkit-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
@@ -3813,9 +3813,18 @@ a:hover {
 }
 #menu footer a {
   color: #fff;
-  margin: 15px;
-  font-size: 20px;
+  font-size: 10px;
+  margin: 15px 8px;
   display: inline-block;
+}
+@media (min-width: 768px) {
+  #menu a {
+    font-size: 4vw;
+  }
+  #menu footer a {
+    margin: 15px;
+    font-size: 20px;
+  }
 }
 #nav-toggle {
   float: left;
@@ -3865,14 +3874,35 @@ a:hover {
 .subject {
   position: relative;
   display: block;
-  padding: 18% 80px 50px 80px;
+  padding: 25% 30px 30px 30px;
   color: #fff;
   width: 100%;
   overflow: hidden;
 }
+.subject.in h2 {
+  top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+}
 .subject h2 {
-  font-size: 60px;
+  position: relative;
+  top: 50px;
+  opacity: .1;
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
   text-transform: uppercase;
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .subject {
+    padding: 18% 80px 50px 80px;
+  }
+  .subject h2 {
+    font-size: 60px;
+  }
 }
 .subject img {
   left: -30px;
